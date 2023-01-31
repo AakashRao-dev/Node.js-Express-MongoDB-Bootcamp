@@ -2,8 +2,6 @@ const http = require('http');
 const fs = require('fs');
 const url = require('url');
 
-// FILES
-
 // SERVER
 
 const server = http.createServer((req, res) => {
@@ -25,3 +23,7 @@ const server = http.createServer((req, res) => {
 server.listen(8000, '127.0.0.1', () => {
   console.log('Server is running');
 });
+
+// createServer from http module
+// req.url for requesting url from URL module
+// writeHead
